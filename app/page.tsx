@@ -421,7 +421,7 @@ export default function Home() {
                               {index > 2 && <span className="text-gray-400">#{index + 1}</span>}
                             </>
                           ) : (
-                            <span className="text-gray-400">#{index + 1}</span>
+                            <span className="text-gray-400">#{member.finalStandingsRank || index + 1}</span>
                           )}
                         </td>
                         <td className="px-6 py-4 font-semibold text-purple-300">{member.memberName}</td>
